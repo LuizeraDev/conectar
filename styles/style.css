@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+.slider .btn {
+    margin-top: 20px;
+  }
+  
+  .section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+  }
+  
+  .section-follow .fa-4x {
+    margin: 5px 10px;
+  }
+  
+  .section-contact h5 {
+    margin-bottom: 30px;
+  }
+  
+body {
+    font-family: 'ABeeZee', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    --bgcolor: rgb(1, 59, 19);
+    --text: rgb(58, 156, 58);
+}
+
+main {
+    display: block;
+    z-index:0;
+    flex: 1 0 auto;
+}
+
+img{
+    background-size: cover;
+    background-position: top;
+    width:100%;
+}
+.slides h3{
+    color: var(--text);
+}
+
+.justificar{
+    text-align:justify;
+}
+
+.box{
+    background-color: rgb(26, 23, 23);
+    width: 96%;
+    margin-left: 3%;
+    height: 100%;
+    opacity: 0.8;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.brand-logo{
+    margin-left: 30px;
+}
+
+.whatsbutton a{
+    width: 60px;
+    right: 6px;
+    margin-left: 100%;
+    margin-top: -500px;
+    position: fixed;
+    opacity: 0.8;
+}
+
+img{
+   display: hidden;
+}
+
+.icone:hover{
+    color: rgb(207, 207, 207);
+}
+
+nav{
+    background-color: var(--bgcolor);
+}
+
+nav a{
+    font-weight: bold;
+}
+
+.page-footer{
+    background-color: var(--bgcolor);
+}
+
+footer a{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .brand-logo {
+      margin-left: 0;
+    }
+    .whatsbutton a{
+        right: 0px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .whatsbutton a{
+        margin-top: -700px;
+    }
+}
+
+.justificar{
+    font-style: justify;
+}
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e4e3e3;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #017c68;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #003d33;
+  }
