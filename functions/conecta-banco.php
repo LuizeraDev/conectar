@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario_bd = "root";
 $senha_bd = "usbw";
-$banco = "db_conecta";
+$banco = "db_conectar";
 
 $con = new mysqli($servidor, $usuario_bd, $senha_bd, $banco);
 mysqli_query($con, "set names 'utf8'"); // Esse código faz com que a inserção de acentuação no banco não seja afetada

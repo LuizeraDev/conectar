@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <title>Admin - Conécta</title>
+  <title>Admin - Conéctar</title>
   <!-- CSS das páginas -->
   <link rel="stylesheet" href="../styles/paginas-dentro.css">
   <!-- Icone da página -->
@@ -30,7 +30,7 @@
     <div class="navbar-fixed" id="home">
       <nav class="teal darken-3">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Conécta</a>
+          <a href="#!" class="brand-logo">Conéctar</a>
           <a data-target="slide-out" style="display: block; index-z: 900;"
             class="sidenav-trigger waves-effect waves-light"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
@@ -95,7 +95,7 @@
 
   <!-- Footer -->
   <footer class="teal darken-4 section white-text center">
-    <p class="flow-text">Conécta Todos os Direitos Reservados &copy; 2020</p>
+    <p class="flow-text">Conéctar Todos os Direitos Reservados &copy; 2020</p>
   </footer>
 
   <!-- ADICIONANDO JQUERY -->

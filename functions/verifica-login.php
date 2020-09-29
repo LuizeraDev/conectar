@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Verifica Login</title>
-</head>
-<body>
-  
-</body>
-</html>
 <?php
 require("conecta-banco.php");
 session_start();
@@ -19,7 +7,7 @@ $senha = $_POST["senha"];
 
 if(empty($_POST["TipoConta"])){
 
-    $email == "conecta@gmail.com" && $senha == "adminconecta" ?  $_SESSION["logado"] = true :  $_SESSION["logado"] = false;
+    $email === "conectarhortifruti@gmail.com" && $senha === "conectar" ?  $_SESSION["logado"] = true :  $_SESSION["logado"] = false;
     
     if($_SESSION["logado"] == true){
       echo"<script>

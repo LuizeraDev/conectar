@@ -105,6 +105,12 @@ h2{
   -webkit-text-stroke-color: #000; /* cor da borda */
 }
 
+#logo{
+  width: 19rem;
+  height: 100%;
+}
+
+
 /* SCROLL BAR */
 
 /* width */

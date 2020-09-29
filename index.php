@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png"
         type="image/x-icon">
-    <title>Conécta</title>
+    <title>Conéctar</title>
     <!-- MEU CSS -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -25,7 +25,7 @@
             <nav class="teal darken-3">
                 <div class="container">
                     <div class="nav-wrapper ">
-                        <a href="#!" class="brand-logo">Conécta</a>
+                        <a href="#!" class="brand-logo"><img src="img/logo.png" id="logo" alt="logo"></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
                                 class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
@@ -155,7 +155,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12">
-                        <h4>Siga a Conécta</h4>
+                        <h4>Siga a Conéctar</h4>
                         <p>Acompanhe nossas redes sociais.</p>
                         <a href="#!" class="white-text">
                             <i class="icone fab fa-facebook fa-4x"></i>
@@ -185,7 +185,7 @@
                         <div class="card-panel teal white-text center">
                             <i class="material-icons medium">email</i>
                             <h5>Contate-nos para sanar dúvidas</h5>
-                            <p class="justificar">Nós da Conécta nos disponibilizamos a sanar todas as dúvidas que você
+                            <p class="justificar">Nós da Conéctar nos disponibilizamos a sanar todas as dúvidas que você
                                 possa ter,
                                 você pode nós contactar através desse formulário ou pelo icone do whatsapp nesta mesma
                                 página.
@@ -233,7 +233,7 @@
 
     <!-- Footer -->
     <footer class="teal darken-4 section white-text center">
-        <p class="flow-text">Conécta Todos os Direitos Reservados &copy; 2020</p>
+        <p class="flow-text">Conéctar Todos os Direitos Reservados &copy; 2020</p>
     </footer>
 
     <!-- ADICIONANDO JQUERY -->

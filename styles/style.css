@@ -115,6 +115,11 @@ footer a{
     font-style: justify;
 }
 
+#logo{
+    width: 11rem;
+    height: 100%;
+}
+
 /* SCROLL BAR */
 
 /* width */

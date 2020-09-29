@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login - Conécta</title>
+    <title>Login - Conéctar</title>
     <!-- Icone da página -->
     <link rel="shortcut icon" href="https://seeklogo.com/images/S/spring-logo-9A2BC78AAF-seeklogo.com.png"
         type="image/x-icon">
@@ -18,7 +18,7 @@
 <body>
     <div class="login-page">
         <div class="center-align">
-            <h2>Conécta</h2>
+            <img src="../img/logo.png" id="logo" alt="logo">
         </div>
         <div class="form">
             <form action="../functions/verifica-login.php" class="login-form" method="POST" autocomplete="off">
