@@ -30,7 +30,7 @@
     <div class="navbar-fixed" id="home">
       <nav class="teal darken-3">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Conéctar</a>
+          <a href="#!" class="brand-logo"><img src="../img/logo.png" id="logo" alt="logo"></a>
           <a data-target="slide-out" style="display: block; index-z: 900;"
             class="sidenav-trigger waves-effect waves-light"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">

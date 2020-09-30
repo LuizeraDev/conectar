@@ -19,17 +19,28 @@
       <div class="row">
         <div class="col s12 l6 offset-l3 white-text card hoverable">
           <div class="col s12 center">
-            <h1 class="text-center teal-text light"><small>Reportar Bug</small></h1>
-            <p class="justificar black-text">
-              Olá, tendo em vista que nosso sistema foi recém implementado, pode surgir alguns bugs, caso encontre algo, nos mande por aqui.
-            </p>
-          </div>
-          <div class="input-field col s12">
-            <textarea class="validate materialize-textarea" placeholder="Descrição do pedido" name="descricao" required></textarea>
-            <label for="message">Descreva o bug</label>
-          </div>
-          <div class="center-align">
-            <input type="submit" value="Reportar Bug" class="btn">
+            <h1 class="text-center teal-text light"><small>Editar Perfil</small></h1>
+            <?php
+                $codigo = $_SESSION["cd_restaurante"];
+                $nomearquivo = $_SESSION["img_restaurante"];
+                $dir = '../../img_restaurantes/'.$codigo.'/'.$nomearquivo;
+                if(is_dir($dir))
+                echo"<img class='circle' width=200 src='../../img/usuario.png'>";
+                else
+                echo "<img class='circle' width=200 alt='foto' src='../../img_restaurantes/$codigo/$nomearquivo'>";
+            ?>
+            <form action="envia-foto.php" enctype="multipart/form-data" method="POST">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>Arquivo</span>
+                  <input type="file" name="arquivo" placeholder="Foto de Perfil">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+              <input type="submit" value="Atualizar foto" class="btn">
+            </form>
           </div>
           <div class="col s12">&nbsp;</div>
         </div>

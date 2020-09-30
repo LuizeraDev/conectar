@@ -71,9 +71,9 @@
                     <div class="caption center-align">
                         <div class="box">
                             <h2>O que nós fazemos?</h2>
-                            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                                Ajudamos a pequenos e medios restaurante a adquirirem alimentos perecíveis, atuamos na
-                                coleta de pedidos por região.
+                            <h5 class="light grey-text text-lighten-3 justificar">
+                                Ajudamos a pequenos e medios restaurantes a adquirirem alimentos perecíveis, atuamos com
+                                a coleta de pedidos por região.
                             </h5>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                     <div class="caption left-align">
                         <div class="box">
                             <h2>Quem se beneficia?</h2>
-                            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                            <h5 class="light grey-text text-lighten-3 justificar">
                                 Restaurantes pequenos, medios e também fornecedores que forem bem avaliados no nosso
                                 site.
                             </h5>
@@ -94,8 +94,8 @@
                     <img src="img/logistic.jpg" alt="logistica">
                     <div class="caption right-align">
                         <div class="box">
-                            <h2>Fornecedores</h2>
-                            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                            <h2>Fornecedor</h2>
+                            <h5 class="light grey-text text-lighten-3 justificar">
                                 Os fornecedores serão rankeados de acordo com as notas recebidas pelos restaurantes.
                             </h5>
                         </div>

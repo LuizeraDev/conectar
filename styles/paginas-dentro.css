@@ -15,4 +15,9 @@ main {
 .justificar{
     text-align: justify;
 }
+
+#logo{
+    width: 11rem;
+    height: 100%;
+}
       

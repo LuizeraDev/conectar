@@ -30,12 +30,12 @@
     <div class="navbar-fixed" id="home">
       <nav class="teal darken-3">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Conéctar</a>
+          <a href="#!" class="brand-logo"><img src="../img/logo.png" id="logo" alt="logo"></a>
           <a data-target="slide-out" style="display: block; index-z: 900;"
             class="sidenav-trigger waves-effect waves-light"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a>Olá, <?php echo $_SESSION['nm_restaurante'];?></a>
+              <a>Olá, <?php echo $_SESSION["nm_restaurante"];?></a>
             </li>
           </ul>
         </div>
@@ -51,7 +51,18 @@
             <img src="../img/fundo.jpg" style="width:100%;" height=300>
           </div>
           <div class="center-align">
-            <a href="#user"><img class="circle" src="../img/usuario.png"></a>
+            <a href="#user">
+              <?php
+                $codigo = $_SESSION["cd_restaurante"];
+                $nomearquivo = $_SESSION["img_restaurante"];
+                $dir = '../img_restaurantes/'.$codigo.'/'.$nomearquivo;
+                if(is_dir($dir))
+                echo"<img class='circle' src='../img/usuario.png'>";
+                else
+                echo "<img class='circle' alt='foto' src='../img_restaurantes/$codigo/$nomearquivo'>";
+              ?>
+            </a>
+            <a class="btn" href="restaurante/editar-info.php">Alterar Foto</a>
           </div>
           <a href="#name"><span class="white-text name"><?php echo $_SESSION['nm_restaurante'];?></span></a>
           <a href="#email"><span class="white-text email"><?php echo $_SESSION['email_restaurante']; ?></span></a>
@@ -59,13 +70,16 @@
       </li>
       <li>
         <a href="#"><i style="color:#005748;" class="cor fab fa-2x fas fa-cookie-bite"></i>Realizar Pedido</a>
-        <a href="restaurante/avaliar-fornecedor.php"><i style="color:#005748;" class="cor fab fa-2x fas fa-star"></i>Avaliar Fornecedor</a>
-        <a href="restaurante/reportar-bug.php"><i style="color:#005748;" class="cor fab fa-2x fas fa-cog"></i>Reportar Bug</a>
+        <a href="restaurante/avaliar-fornecedor.php"><i style="color:#005748;"
+            class="cor fab fa-2x fas fa-star"></i>Avaliar Fornecedor</a>
+        <a href="restaurante/reportar-bug.php"><i style="color:#005748;" class="cor fab fa-2x fas fa-cog"></i>Reportar
+          Bug</a>
       </li>
       <li>
         <div class="divider"></div>
       </li>
-      <li><a class="waves-effect" href="../functions/logout.php"><i style="color:#005748;" class="fab fa-2x fas fa-sign-out-alt"></i>Sair</a>
+      <li><a class="waves-effect" href="../functions/logout.php"><i style="color:#005748;"
+            class="fab fa-2x fas fa-sign-out-alt"></i>Sair</a>
       </li>
     </ul>
   </header>
@@ -89,7 +103,8 @@
             <label for="email">Email</label>
           </div>
           <div class="input-field col s12">
-            <textarea class="validate materialize-textarea" placeholder="Descrição do pedido" name="mensagem" required></textarea>
+            <textarea class="validate materialize-textarea" placeholder="Descrição do pedido" name="mensagem"
+              required></textarea>
             <label for="message">Descrição do pedido</label>
           </div>
           <div class="center-align">

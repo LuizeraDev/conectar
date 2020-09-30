@@ -10,7 +10,7 @@ $(document).ready(function () {
 
 function enviar() {
     /*Coloque seu número na váriavel num*/
-    var num = "5521984013243";
+    var num = "552199954372";
 
     window.open('https://wa.me/' + num + "?text=Eu%20gostaria%20de%20entrar%20em%20contato%20com%20à%20Conéctar.");
 }

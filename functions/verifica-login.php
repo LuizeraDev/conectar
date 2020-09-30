@@ -40,6 +40,7 @@ else{
       $_SESSION['cd_restaurante'] =  $pegadados['cd_restaurante'];
       $_SESSION['nm_restaurante'] =  $pegadados['nm_restaurante'];
       $_SESSION['email_restaurante'] = $pegadados['email_restaurante'];
+      $_SESSION['img_restaurante'] = $pegadados['img_restaurante'];
       $_SESSION['logado'] = true;
       
       header("Location: ../pages/restaurante.php");
@@ -62,6 +63,7 @@ else{
       $_SESSION['cd_distribuidor'] =  $pegadados["cd_distribuidor"];
       $_SESSION['nm_distribuidor'] =  $pegadados["nm_distribuidor"];
       $_SESSION['email_distribuidor'] = $pegadados["email_distribuidor"];
+      $_SESSION['img_distribuidor'] = $pegadadados['img_distribuidor'];
       $_SESSION["logado"] = true;
       
       header("Location: ../pages/distribuidor.php");

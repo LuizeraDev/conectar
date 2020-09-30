@@ -11,16 +11,34 @@ $uf = $_POST["uf"];
 $tipo = $_POST['TipoConta'];
 
 if($tipo == 1){
+    //REGISTRA O RESTAURANTE
     $comandoSQL = "INSERT INTO tb_restaurante(nm_restaurante, email_restaurante, senha_restaurante, cep_restaurante, rua_restaurante, bairro_restaurante, cidade_restaurante, uf_restaurante) VALUES";
     $comandoSQL .= "('$nome', '$email', '$senha', '$cep', '$rua', '$bairro', '$cidade','$uf')";
     $res = $con->query($comandoSQL);
+
+    //CRIA A PASTA COM O CÓDIGO DO RESTAURANTE PARA ARMANEZAR FOTO DO PERFIL
+    $comandoSQL = "SELECT cd_restaurante from tb_restaurante WHERE email_restaurante='$email' AND senha_restaurante='$senha'";
+    $resultado_usuario = mysqli_query($con, $comandoSQL) or die("Erro no banco de dados!");
+    $codigo = mysqli_fetch_array($resultado_usuario);
+    $dir = "../img_restaurantes/".$codigo[0];
+    mkdir($dir, 0777);
     $con->close();
+
     header("Location: ../pages/login.php");
 }
 else if($tipo == 2){
+    //REGISTRA O DISTRIBUIDOR
     $comandoSQL = "INSERT INTO tb_distribuidor(nm_distribuidor, email_distribuidor, senha_distribuidor, cep_distribuidor, rua_distribuidor, bairro_distribuidor, cidade_distribuidor, uf_distribuidor) VALUES";
     $comandoSQL .= "('$nome', '$email', '$senha', '$cep', '$rua', '$bairro', '$cidade','$uf')";
     $res = $con->query($comandoSQL);
+    
+    //CRIA A PASTA COM O CÓDIGO DO DISTRIBUIDOR PARA ARMANEZAR FOTO DO PERFIL
+    $comandoSQL = "SELECT cd_distribuidor from tb_distribuidor WHERE email_distribuidor='$email' AND senha_distribuidor='$senha'";
+    $resultado_usuario = mysqli_query($con, $comandoSQL) or die("Erro no banco de dados!");
+    $codigo = mysqli_fetch_array($resultado_usuario);
+    $dir = "../img_distribuidores/".$codigo[0];
+    mkdir($dir, 0777);
     $con->close();
+
     header("Location: ../pages/login.php");
 }
